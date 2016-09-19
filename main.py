@@ -109,6 +109,10 @@ class Main(QtWidgets.QMainWindow):
 			 
 		elif http in url and www not in url:
 			url = url[:7] + www + url[7:]
+			
+		# If no suffix used make it a google search
+		elif '.' not in url:
+			url = 'http://www.google.com/search?q='+url
  
 		elif http and www not in url:
 			url = http + www + url
