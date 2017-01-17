@@ -16,7 +16,7 @@ Download the repo.
 
 Run the script:
 
-    python browsey.py
+    python main.py
 
 Happy browsing!
 
